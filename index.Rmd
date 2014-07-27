@@ -1,0 +1,64 @@
+---
+title       : Body Mass Index Calculator
+subtitle    : 
+author      : Xiaozheng Song
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction for this App
+
+This application calculates Body Mass Index based on weight and height. 
+
+The input and instrutions are in the left panel.
+
+The results are in the right panel.
+
+---
+## How to input your data?
+
+To use the application, please follow the steps below.
+
+Step1: Input weight and height on the left panel
+
+Step2: Click on the Calulate BMI button on the left panel
+
+
+
+
+---
+## How to calculate BMI?
+
+BMI=(Weight)/(Height*Height)
+
+For example one person is 75kg weight and 1.8m tall. The BMI for this person is 23.15.
+
+```{r}
+weight <- 75
+height <- 1.8
+BMI<- (weight)/(height*height)   
+BMI
+
+```
+
+---
+## What is your BMI?
+
+In the right panel, you could find the weight and height that you just typed in.
+And the BMI is calculated and is shown in the third line.
+
+The conclusion based on BMI is shown last.
+
+If your BMI is less than 18.5, you are underweight.
+
+If your BMI is bewteen 18.5 and 25, you are normal.
+
+If your BMI is larger than 25, you are overweight.
+
+
+
